@@ -1,10 +1,10 @@
 import React from 'react'
+import Fade from 'react-reveal/Fade';
 import ImageHero from 'assets/images/img-hero.jpg'
 import ImageHero_ from 'assets/images/img-hero-frame.jpg'
 import IconCities from 'assets/images/icons/icon-cities.svg'
 import IconTraveler from 'assets/images/icons/icon-traveler.svg'
 import IconTreasure from 'assets/images/icons/icon-treasure.svg'
-
 import Button from 'elements/Button'
 import formatNumber from 'utils/formatNumber'
 
@@ -18,11 +18,8 @@ export default function Hero(props){
       }
 
 
-    // const numberFormat=(number)=>{
-    //     const formatNumbering = new Intl.NumberFormat("id-ID")
-    //     return formatNumbering.format(number)
-    // }
     return(
+        <Fade bottom>
         <section className="container pt-4">
             <div className="row align-items-center">
                 <div className="col-auto pr-5" style={{width:530}}>
@@ -87,5 +84,6 @@ export default function Hero(props){
 
             </div>
         </section>
+        </Fade>
     )
 }
